@@ -1,0 +1,52 @@
+{
+    "version": 2,
+    "name": "seamless",
+    "builds": [
+      {
+        "src": "server.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/",
+        "dest": "server.js"
+      },
+      {
+        "src": "/contact",
+        "dest": "server.js"
+      },
+      {
+        "src": "/warranty",
+        "dest": "server.js"
+      },
+      {
+        "src": "/blog",
+        "dest": "server.js"
+      },
+      {
+        "src": "/matteppf",
+        "dest": "server.js"
+      },
+      {
+        "src": "/clearppf",
+        "dest": "server.js"
+      },
+      {
+        "src": "/submit",
+        "dest": "server.js",
+        "methods": ["POST"]
+      },
+      {
+        "src": "/claim",
+        "dest": "server.js",
+        "methods": ["POST"]
+      }
+    ],
+    "env": {
+      "EMAIL_USER": "@email_user",
+      "EMAIL_PASS": "@email_pass",
+      "PORT": "5000"
+    }
+  }
+  
