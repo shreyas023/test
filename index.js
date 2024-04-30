@@ -8,28 +8,24 @@ app.use(bodyParser.urlencoded({ extended: false })); // parse application/x-www-
 
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/index.html");
-});
-
-app.get("/contact", (req, res) => {
-    res.sendFile(__dirname + "/public/contact.html");
-});
-
-app.get('/warranty', (req, res) => {    
-    res.sendFile(__dirname + "/public/warranty.html");
-});
-
-app.get('/blog', (req, res) => {
-    res.sendFile(__dirname + "/public/blog.html");
-});
-
-app.get('/matteppf', (req, res) => {
-    res.sendFile(__dirname + "/public/matteppf.html");
-});
-
-app.get('/clearppf', (req, res) => {
-    res.sendFile(__dirname + "/public/clearppf.html");
-});
+app.get('*', (req, res) => {
+    let url = req.url;
+    if (url === '/') {
+      res.sendFile(__dirname + '/index.html');
+    } else if (url === '/contact') {
+      res.sendFile(__dirname + '/public/contact.html');
+    } else if (url === '/warranty') {
+      res.sendFile(__dirname + '/public/warranty.html');
+    } else if (url === '/blog') {
+      res.sendFile(__dirname + '/public/blog.html');
+    } else if (url === '/matteppf') {
+      res.sendFile(__dirname + '/public/matteppf.html');
+    } else if (url === '/clearppf') {
+      res.sendFile(__dirname + '/public/clearppf.html');
+    } else {
+      res.sendFile(__dirname + '/public/404.html');
+    }
+  });
+  
 
 app.listen(process.env.PORT, () => console.log("Server listening on http://localhost:" + process.env.PORT));
