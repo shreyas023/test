@@ -1,52 +1,10 @@
 {
     "version": 2,
-    "name": "test",
-    "builds": [
-      {
-        "src": "index.js",
-        "use": "@vercel/node"
-      }
-    ],
     "routes": [
-      {
-        "src": "/",
-        "dest": "index.js"
-      },
-      {
-        "src": "/contact",
-        "dest": "index.js"
-      },
-      {
-        "src": "/warranty",
-        "dest": "index.js"
-      },
-      {
-        "src": "/blog",
-        "dest": "index.js"
-      },
-      {
-        "src": "/matteppf",
-        "dest": "index.js"
-      },
-      {
-        "src": "/clearppf",
-        "dest": "index.js"
-      },
-      {
-        "src": "/submit",
-        "dest": "index.js",
-        "methods": ["POST"]
-      },
-      {
-        "src": "/claim",
-        "dest": "index.js",
-        "methods": ["POST"]
-      }
+      { "src": "/(.*)", "dest": "/" }
     ],
-    "env": {
-      "EMAIL_USER": "@email_user",
-      "EMAIL_PASS": "@email_pass",
-      "PORT": "5000"
-    }
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/index.js" }
+    ],
+    "functions": {}
   }
-  

@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: false })); // parse application/x-www-
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/index.html");
+    res.sendFile(__dirname + "/public/index.html");
 });
 
 app.get("/contact", (req, res) => {
