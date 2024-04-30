@@ -15,13 +15,13 @@ Follow these steps to get a copy of the project and run it on your local machine
 1. **Clone the repository**: Open your terminal, navigate to the directory where you want to keep the project, and run the following command:
 
     ```bash
-    git clone https://github.com/shreyas023/Seamless.git
+    git clone https://github.com/shreyas023/test.git
     ```
 
 2. **Navigate to the project directory**: Enter the following command in your terminal:
 
     ```bash
-    cd Seamless
+    cd test
     ```
 
 3. **Install dependencies**: Run the following command to install all the necessary dependencies:
