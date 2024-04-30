@@ -5,6 +5,5 @@
     ],
     "rewrites": [
       { "source": "/(.*)", "destination": "/index.js" }
-    ],
-    "functions": {}
+    ]
   }
