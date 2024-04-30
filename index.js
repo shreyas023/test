@@ -1,6 +1,7 @@
 const express = require("express");
-const port = 5000;
 const bodyParser = require("body-parser");
+const dotenv = require("dotenv");
+dotenv.config();
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false })); // parse application/x-www-form-urlencoded
@@ -31,4 +32,4 @@ app.get('.clearppf', (req, res) => {
     res.sendFile(__dirname + "/public/clearppf.html");
 });
 
-app.listen(port, () => console.log("Server listening on http://localhost:" + port));
+app.listen(process.env.PORT, () => console.log("Server listening on http://localhost:" + process.env.PORT));
