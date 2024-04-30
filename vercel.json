@@ -5,19 +5,6 @@
             "src": "index.js",
             "use": "@vercel/node"
         }
-    ],
-    "rewrites":[
-        {
-            "source": "/",
-            "destination": "/public/index.html"
-        },
-        {
-            "source": "/contact",
-            "destination": "/public/contact.html"
-        },
-        {
-            "source": "/warranty",
-            "destination": "/public/warranty.html"
-        }
     ]
+    
 }
