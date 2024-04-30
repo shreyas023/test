@@ -8,6 +8,10 @@
     ],
     "rewrites":[
         {
+            "source": "/",
+            "destination": "/index.js"
+        },
+        {
             "source": "/contact",
             "destination": "/index.js"
         },
