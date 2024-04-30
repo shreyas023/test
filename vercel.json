@@ -9,15 +9,15 @@
     "rewrites":[
         {
             "source": "/",
-            "destination": "/index.js"
+            "destination": "/public/index.html"
         },
         {
             "source": "/contact",
-            "destination": "/index.js"
+            "destination": "/public/contact.html"
         },
         {
             "source": "/warranty",
-            "destination": "/index.js"
+            "destination": "/public/warranty.html"
         }
     ]
 }
