@@ -28,7 +28,7 @@ app.get('/matteppf', (req, res) => {
     res.sendFile(__dirname + "/public/matteppf.html");
 });
 
-app.get('.clearppf', (req, res) => {
+app.get('/clearppf', (req, res) => {
     res.sendFile(__dirname + "/public/clearppf.html");
 });
 
