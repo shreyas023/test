@@ -14,7 +14,7 @@
       },
       {
         "src": "/contact",
-        "dest": "/public/contact.html"
+        "dest": "index.js"
       },
       {
         "src": "/warranty",
