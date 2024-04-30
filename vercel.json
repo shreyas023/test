@@ -3,43 +3,43 @@
     "name": "seamless",
     "builds": [
       {
-        "src": "server.js",
+        "src": "index.js",
         "use": "@vercel/node"
       }
     ],
     "routes": [
       {
         "src": "/",
-        "dest": "server.js"
+        "dest": "index.js"
       },
       {
         "src": "/contact",
-        "dest": "server.js"
+        "dest": "index.js"
       },
       {
         "src": "/warranty",
-        "dest": "server.js"
+        "dest": "index.js"
       },
       {
         "src": "/blog",
-        "dest": "server.js"
+        "dest": "index.js"
       },
       {
         "src": "/matteppf",
-        "dest": "server.js"
+        "dest": "index.js"
       },
       {
         "src": "/clearppf",
-        "dest": "server.js"
+        "dest": "index.js"
       },
       {
         "src": "/submit",
-        "dest": "server.js",
+        "dest": "index.js",
         "methods": ["POST"]
       },
       {
         "src": "/claim",
-        "dest": "server.js",
+        "dest": "index.js",
         "methods": ["POST"]
       }
     ],
