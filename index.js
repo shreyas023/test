@@ -66,33 +66,33 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/public/index.html");
 });
 
-app.get("https://test-tan-eta-15.vercel.app/contact", (req, res) => {
+app.get("/contact", (req, res) => {
     res.sendFile(__dirname + "/public/contact.html");
 });
 
-app.get('https://test-tan-eta-15.vercel.app/warranty', (req, res) => {    
+app.get('/warranty', (req, res) => {    
     res.sendFile(__dirname + "/public/warranty.html");
 });
 
-app.get('https://test-tan-eta-15.vercel.app/blog', (req, res) => {
+app.get('/blog', (req, res) => {
     res.sendFile(__dirname + "/public/blog.html");
 });
 
-app.get('https://test-tan-eta-15.vercel.app/matteppf', (req, res) => {
+app.get('/matteppf', (req, res) => {
     res.sendFile(__dirname + "/public/matteppf.html");
 });
 
-app.get('https://test-tan-eta-15.vercel.app/clearppf', (req, res) => {
+app.get('/clearppf', (req, res) => {
     res.sendFile(__dirname + "/public/clearppf.html");
 });
 
-app.post('https://test-tan-eta-15.vercel.app/submit',(req,res)=>{
+app.post('/submit',(req,res)=>{
     const formData = req.body;
     sendEmail(formData, 'Email Form Submission');
     res.sendFile(__dirname + "/public/thankyou.html");
 });
 
-app.post('https://test-tan-eta-15.vercel.app/claim',(req,res)=>{
+app.post('/claim',(req,res)=>{
     const formData = req.body;
     sendEmail(formData, 'Warranty Form Submission');
     res.sendFile(__dirname + "/public/thankyou.html");
