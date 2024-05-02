@@ -11,6 +11,10 @@
             "src":"/claim",
             "dest":"/index.js",
             "methods":["POST"]
+        },
+        {
+            "src":"/(.*)",
+            "dest":"/index.js"
         }
     ],
 
