@@ -95,7 +95,7 @@ app.post('/submit',(req,res)=>{
 app.post('/claim',(req,res)=>{
     const formData = req.body;
     sendEmail(formData, 'Warranty Form Submission');
-    res.sendFile(__dirname + "/public/thankyou.html");
-});
+    res.sendFile(__dirname + "/public/thankyou.html");    
+})
 
 app.listen(process.env.PORT, () => console.log("Server listening on http://localhost:" + process.env.PORT));
