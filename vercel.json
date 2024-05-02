@@ -4,11 +4,13 @@
     "routes":[
         {
             "src":"/submit",
-            "dest":"/index.js"
+            "dest":"/index.js",
+            "methods":["POST"]
         },
         {
             "src":"/claim",
-            "dest":"/index.js"
+            "dest":"/index.js",
+            "methods":["POST"]
         }
     ],
 
